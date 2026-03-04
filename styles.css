@@ -1,0 +1,93 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Seletor por TAG */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+}
+
+/* Classe */
+.topo {
+  background-color: #1f3c88;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.subtitulo {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Layout principal */
+.conteudo {
+  padding: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Classe */
+.painel {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Lista */
+.lista-status {
+  list-style: none;
+}
+
+.status-item {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Pseudo-classe */
+.status-item:hover {
+  background-color: #eef2ff;
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #1f3c88;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.rodape-texto {
+  margin-bottom: 10px;
+}
+
+/* Links */
+.footer-link {
+  display: block;
+  margin: 5px 0;
+  color: #ffd43b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Pseudo-classes obrigatórias */
+.footer-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-link:focus {
+  outline: 2px solid #ffd43b;
+}
+
+/* Seletor por atributo */
+a[href^="http"]::before {
+  content: "🔗 ";
+}
